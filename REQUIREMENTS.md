@@ -1,8 +1,8 @@
 # Requirements
 
-Dinamicamente debera cargar la lista de tareas y hacer todas las modificaciones asyncronamiente, 
+Dinamicamente debera cargar la lista de tareas y hacer todas las modificaciones asincronamente.
 
-i.e: 
+i.e:
 
 - Crear una tarea, terminar una tarea, borrar una tarea.
 - El frontend debe estar programado de preferencia en infernojs o react.
