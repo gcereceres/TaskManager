@@ -1,0 +1,26 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "TODO App:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcereceres/TaskManager.git"
+  },
+  "author": "Gustavo Cereceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcereceres/TaskManager/issues"
+  },
+  "homepage": "https://github.com/gcereceres/TaskManager#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9",
+    "request": "^2.83.0"
+  }
+}
