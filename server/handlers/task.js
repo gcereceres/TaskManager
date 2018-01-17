@@ -4,6 +4,7 @@ module.exports = {
     get: get,
     post: post,
     delete: del
+    // put: put
 };
 
 function get(req, res) {
@@ -42,3 +43,19 @@ function del(req, res){
         }
     });
 }
+
+// function put(req, res){
+//     const taskRequest = req.body.task;
+//     const taskId = req.body.task.id;
+
+//     console.log(`task to edit: ${taskRequest.name}`);
+
+//     task.findByIdAndUpdate(taskId, {$set: {name:taskRequest.name}},{new: true}, (err, task) => {
+//         if (err){
+//             res.status(500).send(`Ooops!, Something went wrong updating task: ${taskName}`);
+//         }else{
+//             console.log(`Task ${taskRequest.name} updated succesfully`);
+//             res.status(task);
+//         }
+//     });
+// }
