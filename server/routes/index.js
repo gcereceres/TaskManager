@@ -12,6 +12,8 @@ module.exports = () => {
         .get(taskHandler.get)
         .post(taskHandler.post);
 
+    router.route('/task/delete/:taskName')
+        .delete(taskHandler.delete);
 
     return router;
 };
