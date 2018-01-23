@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Webpack output dir
+public/
+
+.DS_Store
+
