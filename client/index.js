@@ -1,23 +1,20 @@
-// index.js
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 
-const styles = {
-  app: {
-    paddingTop: 40,
-    textAlign: 'center',
-  },
-}
+// Import the reducer and create a store
+import { reducer } from './listRedux'
+const store = createStore(reducer)
 
-class App extends Component {
-  render() {
-    return (
-      <div style={styles.app}>
-        Welcome to React!
-      </div>
-    )
-  }
-}
+// Import the App container component
+import App from './App'
 
-const root = document.querySelector('#app')
-ReactDOM.render(<App />, root)
+// Pass the store into the Provider
+const AppWithStore = (
+  <Provider store={store}>
+    <App />
+  </Provider>
+)
+
+render(AppWithStore, document.querySelector('#app'))
