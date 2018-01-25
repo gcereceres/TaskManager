@@ -20,7 +20,8 @@ function get(req, res) {
 function post(req, res){
     const taskRequest = req.body.task;
     let newTask = new task({
-        name: taskRequest.name
+        name: taskRequest.name,
+        done: false
     });
     newTask.save((err, task) => {
         if (err) return console.error(err);
