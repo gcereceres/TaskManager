@@ -18,7 +18,7 @@ class App extends Component {
         fetch('/api/task')
         .then(res => res.json())
         .then(tasks => {
-            dispatch(actionCreators.setInitialTasks(tasks.tasks.map((task)=>{return task.name})))
+            dispatch(actionCreators.setInitialTasks(tasks.tasks))
         });
     }
 

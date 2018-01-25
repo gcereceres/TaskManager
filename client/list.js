@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
 export default class List extends Component {
-  renderItem = (text, i) => {
+  renderItem = (item, i) => {
     const { onClickItem } = this.props;
 
     return (
-      <div style={styles.item} onClick={() => onClickItem(text)}>
-        {text}
+      <div style={styles.item} onClick={() => onClickItem(item.name)}>
+        {item.name}
       </div>
     );
   };
